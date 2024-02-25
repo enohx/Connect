@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/space_cadet"
+    tools:context=".SignUp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:scaleType="fitEnd"
+        android:src="@drawable/background2" />
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:background="@color/space_cadet"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/leftArrow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/leftarrow"
+            android:layout_gravity="left"
+            android:layout_weight="0.8" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:src="@drawable/small_logo"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="16" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/SignUpWelcomeText"
+                android:textColor="@color/white"
+                android:text="Welcome to CONNECT!"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/SignUpWelcomeText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SignUpWelcomeText"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:text="Register to begin your journey"
+                android:gravity="center"
+                android:textStyle="italic"
+                android:textSize="17sp"
+
+                />
+
+            <EditText
+                android:id="@+id/fullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SignUpWelcomeText2"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="120dp"
+                android:background="@drawable/rounded_edit_text"
+                android:paddingVertical="9dp"
+                android:hint="Full Name"
+                android:gravity="center"
+                android:textColorHint="@color/white"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+
+                />
+
+            <EditText
+                android:id="@+id/Age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SignUpWelcomeText2"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="250dp"
+                android:background="@drawable/rounded_edit_text"
+                android:paddingVertical="9dp"
+                android:hint="Age"
+                android:gravity="center"
+                android:textColorHint="@color/white"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+
+                />
+
+            <EditText
+                android:id="@+id/Profession"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fullName"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_edit_text"
+                android:paddingVertical="9dp"
+                android:hint="Profession"
+                android:gravity="center"
+                android:textColorHint="@color/white"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+
+                />
+
+            <EditText
+                android:id="@+id/Degree_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Profession"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_edit_text"
+                android:paddingVertical="9dp"
+                android:hint="Degree Level"
+                android:gravity="center"
+                android:textColorHint="@color/white"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+
+                />
+
+            <EditText
+                android:id="@+id/City"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Degree_level"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_edit_text"
+                android:paddingVertical="9dp"
+                android:hint="City"
+                android:gravity="center"
+                android:textColorHint="@color/white"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                />
+
+            <EditText
+                android:id="@+id/Address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/City"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_edit_text"
+                android:paddingVertical="9dp"
+                android:hint="Address"
+                android:gravity="center"
+                android:textColorHint="@color/white"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+
+                />
+
+            <EditText
+                android:id="@+id/Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Address"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_edit_text"
+                android:paddingVertical="9dp"
+                android:hint="Email"
+                android:gravity="center"
+                android:textColorHint="@color/white"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                />
+
+            <EditText
+                android:id="@+id/Phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Email"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_edit_text"
+                android:paddingVertical="9dp"
+                android:hint="Phone"
+                android:gravity="center"
+                android:textColorHint="@color/white"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+
+                />
+
+            <EditText
+                android:id="@+id/Username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Phone"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_edit_text"
+                android:paddingVertical="9dp"
+                android:hint="Username"
+                android:gravity="center"
+                android:textColorHint="@color/white"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+
+                />
+
+            <EditText
+                android:id="@+id/sign_up_Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Username"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_edit_text"
+                android:paddingVertical="9dp"
+                android:hint="Password"
+                android:gravity="center"
+                android:textColorHint="@color/white"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+
+                />
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/SignUpButton"
+                android:layout_below="@+id/sign_up_Password"
+                android:layout_marginTop="45dp"
+                android:text="                Register                → "
+                android:textSize="23sp"
+                android:fontFamily="sans-serif-black"
+                android:textStyle="bold"
+                android:backgroundTint="@color/lavender_blue"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

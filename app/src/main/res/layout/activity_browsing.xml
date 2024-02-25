@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".browsing"
+    android:background="#DCDFEE">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/leftArrow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/leftarrow"
+            android:layout_gravity="left"
+            android:layout_weight="0.8" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:src="@drawable/small_logo2"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="16" />
+    </LinearLayout>
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginHorizontal="30dp"
+        android:queryHint="Search by profession ...."
+        />
+
+    <SearchView
+        android:id="@+id/search_degree_level"
+        android:layout_below="@id/searchView"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="220dp"
+        android:queryHint="degree level ...."
+        android:textColorHint="@color/white"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/blue_ish"
+        />
+
+    <Button
+        android:id="@+id/search_pay_rate"
+        android:layout_below="@id/searchView"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_marginLeft="220dp"
+        android:layout_marginRight="30dp"
+        android:text="Alphabetically"
+        android:textColorHint="@color/white"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/lavender_blue"
+        />
+
+    <SearchView
+        android:id="@+id/search_city"
+        android:layout_below="@id/search_degree_level"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_marginHorizontal="30dp"
+        android:queryHint="City ...."
+        android:textColorHint="@color/white"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        />
+
+
+    <ListView
+        android:id="@+id/lv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_city"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:paddingHorizontal="30dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_navigation_bar"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lavender"
+        android:backgroundTint="@color/lavender"
+        app:labelVisibilityMode="unlabeled"/>
+
+</RelativeLayout>

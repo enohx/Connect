@@ -1,0 +1,6 @@
+<resources>
+    <style name="RoundedEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/rounded_edit_text</item>
+    </style>
+</resources>
+

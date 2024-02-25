@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/space_cadet"
+    tools:context=".LogIn">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-115dp"
+        android:scaleType="fitEnd"
+        android:src="@drawable/background2" />
+
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:background="@color/space_cadet"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/leftArrow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/leftarrow"
+            android:layout_gravity="left"
+            android:layout_weight="0.8" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:src="@drawable/small_logo"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="16" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back!"
+        android:textSize="45sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_below="@+id/header"
+        android:gravity="center"
+        android:layout_marginTop="60dp"/>
+
+    <TextView
+        android:id="@+id/welcometext2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log in to continue your journey!"
+        android:layout_below="@+id/welcome"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcometext2"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_marginHorizontal="50dp"
+        android:gravity="center"
+        android:textColorHint="@color/white"
+        android:paddingVertical="6dp"
+        android:hint="Username"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_marginHorizontal="50dp"
+        android:gravity="center"
+        android:hint="Password"
+        android:textColorHint="@color/white"
+        android:textSize="30sp"
+        android:paddingVertical="6dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LoginBUtton"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="50dp"
+        android:text="Log In"
+        android:textSize="29sp"
+        android:fontFamily="sans-serif-black"
+        android:textStyle="bold"
+        android:backgroundTint="@color/lavender_blue"/>
+
+    <TextView
+        android:layout_below="@+id/LoginBUtton"
+        android:id="@+id/question_text"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Don't have an Account ? "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question_text"
+        android:id="@+id/signUp_text"
+        android:layout_marginTop="13dp"
+        android:text="Click here to Register now !"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="19dp"
+        android:textStyle="italic"
+        android:fontFamily="serif"/>
+
+</RelativeLayout>

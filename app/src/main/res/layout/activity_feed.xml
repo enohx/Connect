@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feed"
+    android:background="#DCDFEE">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/leftArrow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/leftarrow"
+            android:layout_gravity="left"
+            android:layout_weight="0.8" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:src="@drawable/small_logo2"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="16" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:id="@+id/header_text"
+        android:layout_marginTop="25dp"
+        android:text="CONNECT with Professionals"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="25sp"/>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_text"
+        android:layout_marginHorizontal="0dp"
+        android:layout_marginTop="30dp"/>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_navigation_bar"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lavender"
+        android:backgroundTint="@color/lavender"
+        app:labelVisibilityMode="unlabeled"/>
+
+
+
+
+</RelativeLayout>
